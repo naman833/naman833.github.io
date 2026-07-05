@@ -95,12 +95,13 @@
     .a2d{animation:ob2 15s linear infinite;animation-delay:-11.25s;}
     @keyframes ob2{from{transform:rotate(0deg)   translateX(210px) rotate(0deg);}to{transform:rotate(360deg)  translateX(210px) rotate(-360deg);}}
     .a3 {animation:ob3 22s linear infinite;}
-    .a3b{animation:ob3 22s linear infinite;animation-delay:-3.14s;}
-    .a3c{animation:ob3 22s linear infinite;animation-delay:-6.29s;}
-    .a3d{animation:ob3 22s linear infinite;animation-delay:-9.43s;}
-    .a3e{animation:ob3 22s linear infinite;animation-delay:-12.57s;}
-    .a3f{animation:ob3 22s linear infinite;animation-delay:-15.71s;}
-    .a3g{animation:ob3 22s linear infinite;animation-delay:-18.86s;}
+    .a3b{animation:ob3 22s linear infinite;animation-delay:-2.75s;}
+    .a3c{animation:ob3 22s linear infinite;animation-delay:-5.5s;}
+    .a3d{animation:ob3 22s linear infinite;animation-delay:-8.25s;}
+    .a3e{animation:ob3 22s linear infinite;animation-delay:-11s;}
+    .a3f{animation:ob3 22s linear infinite;animation-delay:-13.75s;}
+    .a3g{animation:ob3 22s linear infinite;animation-delay:-16.5s;}
+    .a3h{animation:ob3 22s linear infinite;animation-delay:-19.25s;}
     @keyframes ob3{from{transform:rotate(0deg)   translateX(295px) rotate(0deg);}to{transform:rotate(-360deg) translateX(295px) rotate(360deg);}}
     /* Data packets */
     .dpkt{position:absolute;top:50%;left:50%;border-radius:50%;pointer-events:none;}
@@ -186,12 +187,13 @@
     .expbulls li::before{content:'▸';position:absolute;left:0;color:var(--blue-br);font-size:.7rem;top:.14rem;}
     .expbulls li strong{color:var(--neon-soft);}
     /* CERTS */
-    .cgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-bottom:1.5rem;}
+    .cgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem;margin-bottom:1.5rem;}
     .cc{background:var(--glass);border:1px solid var(--gb);border-radius:14px;padding:1.8rem 2rem;backdrop-filter:blur(22px);transition:all .32s;position:relative;overflow:hidden;}
     .cc::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;}
     .cc.azure::before{background:linear-gradient(90deg,#0078D4,#50e6ff);}
     .cc.aws::before  {background:linear-gradient(90deg,#FF9900,#ffcc66);}
     .cc.gcp::before  {background:linear-gradient(90deg,#4285F4,#34A853,#FBBC05,#EA4335);}
+    .cc.cka::before  {background:linear-gradient(90deg,#326CE5,#60a5fa);}
     .cc:hover{border-color:rgba(59,130,246,.4);transform:translateY(-5px);box-shadow:0 10px 32px rgba(59,130,246,.1);}
     .cc-icon{font-size:2.5rem;margin-bottom:1rem;display:block;}
     .cc-icon i{vertical-align:middle;}
@@ -351,7 +353,7 @@
       <li><a href="#certifications">Certs</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <a href="https://drive.google.com/file/d/12-gt1QBLeAocWZn7EK6_iwViR40Bnw4G/view?usp=sharing" target="_blank" class="nav-resume">Resume ↗</a>
+    <a href="https://drive.google.com/file/d/1nRrWJD0Ce8wy8a-8Hu1vdOQWU_Tv-Jj7/view?usp=sharing" target="_blank" class="nav-resume">Resume ↗</a>
   </div>
   <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
     <span></span><span></span><span></span>
@@ -364,7 +366,7 @@
     <li><a href="#experience" class="nav-drawer-link">Experience</a></li>
     <li><a href="#certifications" class="nav-drawer-link">Certs</a></li>
     <li><a href="#contact" class="nav-drawer-link">Contact</a></li>
-    <li><a href="https://drive.google.com/file/d/12-gt1QBLeAocWZn7EK6_iwViR40Bnw4G/view?usp=sharing" target="_blank" class="nav-drawer-link" style="color:var(--cyan);">Resume ↗</a></li>
+    <li><a href="https://drive.google.com/file/d/1nRrWJD0Ce8wy8a-8Hu1vdOQWU_Tv-Jj7/view?usp=sharing" target="_blank" class="nav-drawer-link" style="color:var(--cyan);">Resume ↗</a></li>
   </ul>
 </div>
 <!-- HERO -->
@@ -457,6 +459,16 @@
         </svg>
         <span class="lbl">Bedrock</span>
       </div>
+      <!-- CKA -->
+      <div class="oi a3h">
+        <svg width="34" height="34" viewBox="0 0 100 100" fill="none">
+          <circle cx="50" cy="50" r="45" fill="#326CE5"/>
+          <path d="M50 20 L50 80 M20 50 L80 50 M30 30 L70 70 M70 30 L30 70" stroke="white" stroke-width="3" opacity=".3"/>
+          <circle cx="50" cy="50" r="18" fill="white" opacity=".95"/>
+          <path d="M50 35 L53 47 L65 47 L55 54 L58 66 L50 59 L42 66 L45 54 L35 47 L47 47 Z" fill="#326CE5"/>
+        </svg>
+        <span class="lbl">CKA</span>
+      </div>
     </div>
   </div>
 </section>
@@ -478,6 +490,7 @@
     <span class="titem"><span class="tdot"></span>⚡ Gloo Gateway</span>
     <span class="titem"><span class="tdot"></span>🔗 Model Context Protocol</span>
     <span class="titem"><span class="tdot"></span>📦 Karpenter</span>
+    <span class="titem"><span class="tdot"></span>🎓 CKA Certified</span>
     <span class="titem"><i class="devicon-kubernetes-plain colored"></i>Kubernetes</span>
     <span class="titem"><span class="tdot"></span><i class="devicon-amazonwebservices-plain-wordmark colored"></i>AWS EKS</span>
     <span class="titem"><span class="tdot"></span><i class="devicon-azure-plain colored"></i>Azure AKS</span>
@@ -493,6 +506,7 @@
     <span class="titem"><span class="tdot"></span>⚡ Gloo Gateway</span>
     <span class="titem"><span class="tdot"></span>🔗 Model Context Protocol</span>
     <span class="titem"><span class="tdot"></span>📦 Karpenter</span>
+    <span class="titem"><span class="tdot"></span>🎓 CKA Certified</span>
   </div>
 </div>
 <div class="div"><hr/></div>
@@ -797,6 +811,12 @@
       <p class="cprov">Google / Coursera</p>
       <p class="cname">Google Cloud Fundamentals</p>
       <a href="https://www.coursera.org/account/accomplishments/verify/3UXHB385PE9C" target="_blank" class="clink">View Certificate →</a>
+    </div>
+    <div class="cc cka rev d3">
+      <span class="cc-icon"><i class="devicon-kubernetes-plain" style="color:#326CE5"></i></span>
+      <p class="cprov">CNCF / Linux Foundation</p>
+      <p class="cname">CKA: Certified Kubernetes Administrator</p>
+      <a href="https://www.credly.com/badges/55739c89-036a-4707-b2b9-a5f62ccf892c/public_url" target="_blank" class="clink">View on Credly →</a>
     </div>
   </div>
 </div>
